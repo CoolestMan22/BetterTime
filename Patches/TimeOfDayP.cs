@@ -11,7 +11,7 @@ namespace BetterTime.Patches
             [HarmonyPrefix]
             private static void Start_Pre(TimeOfDay __instance)
             {
-                int value = BetterTime_Base.TimeSpeed.Value;
+                float value = BetterTime_Base.TimeSpeed.Value;
                 // Make 1 hour ingame, actually be one real hour
                 BetterTime_Base.mls.LogInfo($"Old TimeSpeed: {__instance.globalTimeSpeedMultiplier}");
                 __instance.globalTimeSpeedMultiplier /=  value;
