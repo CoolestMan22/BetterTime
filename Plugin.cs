@@ -16,7 +16,7 @@ namespace BetterTime
         public static ManualLogSource? mls;
 
         // Add a config option to set the time speed, if it was set to 1, it would take 1 minute for an hour to pass, if it was set to 40, it would take 40 minutes for an hour to pass, etc.
-        public static ConfigEntry<int> TimeSpeed;
+        public static ConfigEntry<float> TimeSpeed;
 
 
 
